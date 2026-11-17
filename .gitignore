@@ -1,0 +1,29 @@
+
+# Python virtual environment
+.venv/
+
+# Python temporary files
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Jupyter temporary files
+.ipynb_checkpoints/
+
+# Environment variables and secrets
+.env
+.env.*
+
+# Large datasets and generated features
+data/raw/
+data/processed/
+
+# Trained model checkpoints
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+
+# Temporary uploads and generated outputs
+uploads/
+outputs/
