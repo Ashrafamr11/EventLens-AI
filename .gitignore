@@ -27,3 +27,11 @@ checkpoints/
 # Temporary uploads and generated outputs
 uploads/
 outputs/
+
+# Python packaging artifacts
+*.egg-info/
+build/
+dist/
+
+# Allow environment configuration example
+!.env.example
