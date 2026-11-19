@@ -1,6 +1,7 @@
 
 import subprocess
 from pathlib import Path
+import numpy as np
 
 
 def extract_frames(
@@ -35,7 +36,7 @@ def extract_frames(
         "-hide_banner",
         "-loglevel", "error",
         "-i", str(video_path),
-        "-vf", f"fps={fps}",
+        "-r", str(fps),
         "-q:v", "3",
         str(output_pattern),
     ]
@@ -43,3 +44,22 @@ def extract_frames(
     subprocess.run(command, check=True)
 
     return sorted(output_dir.glob("frame_*.jpg"))
+
+def select_uniform_frames(
+    frames: list[Path],
+    count: int = 80,
+) -> list[Path]:
+    if count <= 0:
+        raise ValueError("Frame count must be positive.")
+
+    if len(frames) < count:
+        raise ValueError(
+            f"Expected at least {count} frames, "
+            f"but found {len(frames)}."
+        )
+
+    indices = np.round(
+        np.linspace(0, len(frames) - 1, count)
+    ).astype(int)
+
+    return [frames[i] for i in indices]
