@@ -11,12 +11,14 @@ sys.path.insert(0, str(PROJECT_ROOT / "src"))
 
 from eventlens.model_registry import get_model_catalog
 
+
 DATA_ROOT = Path(
     os.environ.get(
         "EVENTLENS_DATA_ROOT",
-        "/content/drive/MyDrive/EventLens-AI",
+        str(PROJECT_ROOT),
     )
 )
+
 
 app = FastAPI(
     title="EventLens AI API",
