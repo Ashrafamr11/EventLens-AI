@@ -1,0 +1,13 @@
+﻿model,level,micro_f1_mean,micro_f1_sd,macro_f1_mean,macro_f1_sd
+baseline,clip,0.70331,0.02532,0.64791,0.01448
+baseline,segment,0.50967,0.02744,0.47275,0.02013
+baseline,event,0.3032,0.02101,0.30255,0.01164
+bigru,clip,0.76695,0.00563,0.69592,0.00833
+bigru,segment,0.65315,0.01438,0.60831,0.01658
+bigru,event,0.44416,0.01513,0.45869,0.02142
+transformer,clip,0.76322,0.02594,0.72616,0.029
+transformer,segment,0.65021,0.04091,0.62299,0.04726
+transformer,event,0.4108,0.03909,0.4397,0.04413
+cross_modal,clip,0.56127,0.02983,0.25517,0.04548
+cross_modal,segment,0.38745,0.0305,0.17648,0.02968
+cross_modal,event,0.25105,0.02695,0.10378,0.02837

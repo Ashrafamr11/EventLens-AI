@@ -1,0 +1,53 @@
+{
+  "study": "train_only_scale_adaptive_gaussian_noise",
+  "seed": 42,
+  "model": "bigru",
+  "noise_scale": 0.05,
+  "epochs": 5,
+  "batch_size": 64,
+  "optimizer": "AdamW",
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "train_count": 10000,
+  "validation_count": 649,
+  "validation_invalid_annotation_rows": 1,
+  "threshold": 0.5,
+  "event_iou_threshold": 0.5,
+  "annotation_union": "audio_visual_union",
+  "hardware": "CPU",
+  "training_seconds": null,
+  "gpu_training_peak_mib": null,
+  "best_val_loss": 0.08769103051242182,
+  "history": [],
+  "metrics": {
+    "clip": {
+      "precision": 0.8695652173913043,
+      "recall": 0.6666666666666666,
+      "micro_f1": 0.7547169811320755,
+      "macro_f1": 0.6889613103302807,
+      "tp": 780,
+      "fp": 117,
+      "fn": 390
+    },
+    "segment": {
+      "precision": 0.765746850629874,
+      "recall": 0.5588879159369528,
+      "micro_f1": 0.6461655277145026,
+      "macro_f1": 0.6066444809621317,
+      "tp": 5106,
+      "fp": 1562,
+      "fn": 4030
+    },
+    "event": {
+      "precision": 0.49318801089918257,
+      "recall": 0.3821252638986629,
+      "micro_f1": 0.43061062648691517,
+      "macro_f1": 0.4534738749716065,
+      "tp": 543,
+      "fp": 558,
+      "fn": 878
+    }
+  },
+  "recovered_from_checkpoint": true,
+  "note": "Training completed; runtime and detailed history unavailable after logging error."
+}
