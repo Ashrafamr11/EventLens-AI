@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="EventLens AI — Audio-visual event detection and temporal localization">
+  <title>EventLens AI — See every moment</title>
+  <link rel="stylesheet" href="/static/styles.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Primary navigation">
+      <a class="brand" href="/" aria-label="EventLens home">
+        <span class="brand-mark"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M6 23V9h4m-4 7h8m1-8 6 8-6 8m7-15h4v14h-4" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span>Event<span class="brand-white">Lens</span><small>AI STUDIO</small></span>
+      </a>
+      <div class="side-section-label">WORKSPACE</div>
+      <nav class="nav-links">
+        <a class="active" href="#workspace"><span class="nav-icon">▦</span> Analyzer</a>
+        <a href="#results"><span class="nav-icon">≋</span> Event timeline</a>
+        <a href="#architectures"><span class="nav-icon">⬡</span> Models</a>
+      </nav>
+      <div class="side-section-label">PROJECT</div>
+      <div class="side-note"><span class="note-dot"></span> 25 event classes<br><span class="muted-indent">10-second clip analysis</span></div>
+      <div class="sidebar-bottom"><span class="course-pill">AI403 · DEEP LEARNING</span><div>Audio–Visual Event Localization<br><span>Research prototype · 2026</span></div></div>
+    </aside>
+
+    <main class="main-content" id="workspace">
+      <header class="topbar"><div class="breadcrumb">Workspace <span>/</span> <strong>Video analyzer</strong></div><div class="topbar-right"><span class="small-dot"></span><span id="service-status">Checking service...</span></div></header>
+      <div class="content-wrap">
+        <div class="hero"><div class="hero-eyebrow"><span></span> MULTIMODAL INTELLIGENCE</div><h1>Understand what happens.<br><span>Know exactly when.</span></h1><p>Upload a video, compare trained deep learning architectures, and explore a time-stamped map of every detected event.</p><div class="hero-badges"><span>◉ Audio + Vision</span><span>⌁ Temporal localization</span><span>▣ 4 model architectures</span></div></div>
+
+        <div class="work-grid">
+          <section class="panel upload-panel" aria-labelledby="source-heading">
+            <div class="section-head"><div><div class="eyebrow">01 / INPUT</div><h2 id="source-heading">Your source</h2></div><span class="panel-icon">↥</span></div>
+            <div class="mode-switch" role="tablist" aria-label="Input format"><button id="tab-video" role="tab" aria-selected="true" class="selected" type="button">Video upload</button><button id="tab-features" role="tab" aria-selected="false" type="button">Feature file (.npz)</button></div>
+            <div id="video-input-area">
+              <label for="video-file" class="drop-zone" id="drop-zone" tabindex="0">
+                <span class="upload-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16V4m-5 5 5-5 5 5M4 16v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <strong>Drop your video here</strong><span>or <em>browse files</em> from your device</span><small>MP4, MOV, MKV, AVI or WEBM · 9.5–10.5 sec · max 100 MB</small>
+                <input id="video-file" type="file" accept=".mp4,.mov,.mkv,.avi,.webm,video/*">
+              </label>
+              <div class="file-summary hidden" id="video-summary"><span class="file-badge">▶</span><div><strong id="video-name"></strong><small id="video-size"></small></div><button id="clear-video" class="subtle-btn" type="button" aria-label="Remove selected video">✕</button></div>
+              <video id="video-preview" controls class="video-preview hidden" preload="metadata" playsinline></video>
+            </div>
+            <div id="features-input-area" class="hidden">
+              <label for="features-file" class="drop-zone smaller" id="features-drop-zone" tabindex="0"><span class="upload-icon">{ }</span><strong>Choose extracted features</strong><span>Saved from the same 10-second video</span><small>NPZ must contain audio (10×128), visual (10×2048), motion (10×512)</small><input id="features-file" type="file" accept=".npz"></label>
+              <div class="file-summary hidden" id="features-summary"><span class="file-badge">{ }</span><div><strong id="features-name"></strong><small id="features-size"></small></div><button id="clear-features" class="subtle-btn" type="button">✕</button></div>
+              <p class="helper-line">This mode uses already-extracted features. It does <strong>not</strong> extract new audio or frames.</p>
+            </div>
+            <div class="requirements" id="requirements"><span class="requirement-label">Environment</span><div id="requirement-details">Checking pretrained extractors and checkpoints…</div></div>
+          </section>
+
+          <section class="panel model-panel" id="architectures" aria-labelledby="model-heading">
+            <div class="section-head"><div><div class="eyebrow">02 / CONFIGURE</div><h2 id="model-heading">Select architecture</h2></div><span class="panel-icon">◎</span></div>
+            <p class="panel-desc">Choose one architecture or compare multiple models on identical input features.</p>
+            <div id="model-list" class="model-list"><div class="loading-text">Loading model catalog…</div></div>
+            <div class="threshold-line"><div><strong>Detection threshold</strong><span>Fixed at 0.50 in reported evaluation</span></div><output id="threshold-label" for="threshold">50%</output></div>
+            <input type="range" id="threshold" min="0.10" max="0.90" value="0.50" step="0.05" aria-label="Detection threshold">
+            <div class="slider-labels"><span>Higher recall</span><span>Higher precision</span></div>
+            <button id="analyze-btn" class="primary-action" type="button" disabled><span id="button-icon">✦</span><span id="button-label">Analyze selected input</span><span class="action-arrow">↗</span></button>
+            <p class="status-message" id="run-message" role="status" aria-live="polite">Select an input and at least one available model.</p>
+          </section>
+        </div>
+
+        <section class="results-section" id="results" aria-labelledby="results-heading">
+          <div class="results-section-head"><div><div class="eyebrow">03 / INSIGHTS</div><h2 id="results-heading">Your event timeline</h2><p>Explore what each architecture identified in your clip.</p></div><span class="results-meta" id="results-meta">WAITING FOR ANALYSIS</span></div>
+          <div id="result-placeholder" class="result-placeholder"><div class="placeholder-visual"><span class="pulse pulse-1"></span><span class="pulse pulse-2"></span><span class="pulse pulse-3"></span><span class="play-ring">▶</span></div><h3>Your moments, mapped in time.</h3><p>Run an analysis to see time spans, confidence scores and clickable detected events.</p></div>
+          <div id="result-content" class="hidden">
+            <div class="metrics-row"><div class="metric-card"><span>MODELS ANALYZED</span><strong id="metric-models">0</strong></div><div class="metric-card"><span>DETECTED EVENTS</span><strong id="metric-events">0</strong></div><div class="metric-card"><span>CLIP DURATION</span><strong id="metric-duration">10.0s</strong></div><div class="metric-card"><span>THRESHOLD</span><strong id="metric-threshold">0.50</strong></div></div>
+            <div id="model-results" class="model-results"></div>
+            <p class="results-footnote">Predictions are model scores, not verified ground truth. One-second intervals; false positives are possible. For research evaluation, refer to the separate held-out test results.</p>
+          </div>
+        </section>
+        <footer>EVENTLENS AI <span>·</span> AI403 Deep Learning Project <span>·</span> Local inference — no external prediction API</footer>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
