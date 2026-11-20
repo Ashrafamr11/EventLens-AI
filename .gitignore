@@ -35,3 +35,5 @@ dist/
 
 # Allow environment configuration example
 !.env.example
+.venv310/
+*.npz

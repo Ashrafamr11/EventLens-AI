@@ -90,3 +90,20 @@ def predict_events(
     )
 
     return events
+
+
+def validate_features(features):
+    expected = {
+        "audio": (10, 128),
+        "visual": (10, 2048),
+        "motion": (10, 512),
+    }
+    result = {}
+    for name, shape in expected.items():
+        if name not in features:
+            raise ValueError(f"Missing {name} features")
+        arr = np.asarray(features[name], dtype=np.float32)
+        if arr.shape != shape or not np.isfinite(arr).all():
+            raise ValueError(f"Invalid {name} features")
+        result[name] = arr
+    return result

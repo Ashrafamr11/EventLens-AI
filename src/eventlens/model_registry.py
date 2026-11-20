@@ -1,52 +1,52 @@
+"""Model families and checkpoint priorities.
 
+Checkpoints are external artifacts and are never bundled with source code.
+"""
 from pathlib import Path
-
 
 MODEL_REGISTRY = {
     "baseline": {
-        "name": "Temporal MLP",
-        "family": "Baseline",
-        "checkpoint": "baseline_seed42_5epochs.pt",
-        "implemented": True,
+        "name": "Temporal MLP", "family": "Baseline",
+        "checkpoints": ["experiments/multi_seed/baseline_seed42.pt", "checkpoints/baseline_seed42_5epochs.pt"],
+        "hidden_dim": 256,
     },
     "bigru": {
-        "name": "Bidirectional GRU",
-        "family": "Classic DL",
-        "checkpoint": "bigru_seed42_5epochs.pt",
-        "implemented": True,
+        "name": "Bidirectional GRU", "family": "Classic DL",
+        "checkpoints": ["experiments/multi_seed/bigru_seed44.pt", "checkpoints/bigru_seed42_5epochs.pt"],
+        "hidden_dim": 128,
     },
     "transformer": {
-        "name": "Temporal Transformer",
-        "family": "Modern DL",
-        "checkpoint": None,
-        "implemented": False,
+        "name": "Temporal Transformer", "family": "Modern DL",
+        "checkpoints": ["experiments/multi_seed/transformer_seed44.pt", "checkpoints/transformer_seed42_5epochs.pt"],
+        "hidden_dim": 128,
     },
     "cross_modal": {
-        "name": "Cross-Modal Attention Fusion",
-        "family": "Advanced DL",
-        "checkpoint": None,
-        "implemented": False,
+        "name": "Cross-Modal Attention", "family": "Advanced DL",
+        "checkpoints": ["experiments/multi_seed/cross_modal_seed42.pt", "checkpoints/cross_modal_seed42_5epochs.pt"],
+        "hidden_dim": 128,
     },
 }
 
 
-def get_model_catalog(checkpoints_dir: Path) -> list[dict]:
-    catalog = []
+def resolve_checkpoint(model_id: str, artifact_root: Path) -> Path | None:
+    if model_id not in MODEL_REGISTRY:
+        raise ValueError(f"Unknown model: {model_id}")
+    base = Path(artifact_root).resolve()
+    for candidate in MODEL_REGISTRY[model_id]["checkpoints"]:
+        path = base / candidate
+        if path.is_file():
+            return path
+    return None
 
-    for model_id, info in MODEL_REGISTRY.items():
-        checkpoint = info["checkpoint"]
 
-        available = (
-            info["implemented"]
-            and checkpoint is not None
-            and (Path(checkpoints_dir) / checkpoint).is_file()
-        )
-
-        catalog.append({
+def get_model_catalog(artifact_root: Path) -> list[dict]:
+    return [
+        {
             "id": model_id,
-            "name": info["name"],
-            "family": info["family"],
-            "available": available,
-        })
-
-    return catalog
+            "name": metadata["name"],
+            "family": metadata["family"],
+            "available": (checkpoint := resolve_checkpoint(model_id, artifact_root)) is not None,
+            "checkpoint": str(checkpoint.relative_to(Path(artifact_root).resolve())) if checkpoint else None,
+        }
+        for model_id, metadata in MODEL_REGISTRY.items()
+    ]
