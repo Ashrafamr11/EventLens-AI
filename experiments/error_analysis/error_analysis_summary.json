@@ -1,0 +1,19 @@
+{
+  "split": "test",
+  "checkpoint": "bigru_seed44.pt",
+  "threshold": 0.5,
+  "event_iou_threshold": 0.5,
+  "annotation_union": "audio_visual_union",
+  "clips": 1200,
+  "invalid_annotation_rows": 4,
+  "tp": 1040,
+  "fp": 1085,
+  "fn": 1598,
+  "event_micro_f1": 0.4366995591014067,
+  "issues": {
+    "false_positive": 1085,
+    "boundary_mismatch": 485,
+    "false_negative": 1598
+  },
+  "important_note": "These are errors relative to pooled temporal annotations, not human-reviewed video examples."
+}

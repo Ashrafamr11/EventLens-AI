@@ -1,0 +1,5 @@
+﻿model,head_parameters,checkpoint_size_mib,training_seconds_mean_3seeds,training_seconds_sd_3seeds,training_hardware,cpu_head_inference_ms_mean_10runs,cpu_head_inference_ms_sd_10runs,inference_scope,peak_memory,optimizer,batch_size,learning_rate,epochs
+baseline,694809,7.96,163.0,2.92,Tesla T4,1.794,0.163,"CPU, classifier only (features pre-extracted)",Not measured (peak RAM/VRAM),AdamW,64,0.001,5
+bigru,991769,11.37,162.49,1.52,Tesla T4,6.065,2.536,"CPU, classifier only (features pre-extracted)",Not measured (peak RAM/VRAM),AdamW,64,0.001,5
+transformer,481433,5.53,163.61,0.86,Tesla T4,3.301,1.14,"CPU, classifier only (features pre-extracted)",Not measured (peak RAM/VRAM),AdamW,64,0.001,5
+cross_modal,616476,7.08,164.27,1.31,Tesla T4,9.799,4.774,"CPU, classifier only (features pre-extracted)",Not measured (peak RAM/VRAM),AdamW,64,0.001,5

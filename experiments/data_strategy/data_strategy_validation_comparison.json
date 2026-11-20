@@ -1,0 +1,79 @@
+{
+  "study": "Data strategy: train-only feature Gaussian noise",
+  "models": "BiGRU vs original BiGRU baseline",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "noise_scale_relative_to_sample_std": 0.05,
+  "same_validation_split": true,
+  "test_set_used": false,
+  "original_results_source": "/content/drive/MyDrive/EventLens-AI/experiments/multi_seed_validation_metrics.json",
+  "comparison": {
+    "clip": {
+      "clean_original_mean": 0.7669468382173342,
+      "clean_original_sd": 0.005626312713094659,
+      "train_noise_mean": 0.7641993553048949,
+      "train_noise_sd": 0.008212318093747792,
+      "delta_percentage_points": -0.2747482912439314,
+      "per_seed": {
+        "42": {
+          "clean": 0.7648478995654273,
+          "augmented": 0.7547169811320755
+        },
+        "43": {
+          "clean": 0.7626717195641876,
+          "augmented": 0.7688656858092074
+        },
+        "44": {
+          "clean": 0.773320895522388,
+          "augmented": 0.7690153989734018
+        }
+      }
+    },
+    "segment": {
+      "clean_original_mean": 0.6531456778792021,
+      "clean_original_sd": 0.014382335541864126,
+      "train_noise_mean": 0.6559022032440168,
+      "train_noise_sd": 0.015845462647962195,
+      "delta_percentage_points": 0.27565253648147436,
+      "per_seed": {
+        "42": {
+          "clean": 0.6473320778405525,
+          "augmented": 0.6461655277145026
+        },
+        "43": {
+          "clean": 0.6425801686465193,
+          "augmented": 0.6473550071486294
+        },
+        "44": {
+          "clean": 0.6695247871505344,
+          "augmented": 0.6741860748689185
+        }
+      }
+    },
+    "event": {
+      "clean_original_mean": 0.44416169271284806,
+      "clean_original_sd": 0.015129366462781981,
+      "train_noise_mean": 0.44095907996631567,
+      "train_noise_sd": 0.013942425264796903,
+      "delta_percentage_points": -0.3202612746532385,
+      "per_seed": {
+        "42": {
+          "clean": 0.444888178913738,
+          "augmented": 0.43061062648691517
+        },
+        "43": {
+          "clean": 0.42868217054263563,
+          "augmented": 0.43545279383429675
+        },
+        "44": {
+          "clean": 0.45891472868217054,
+          "augmented": 0.45681381957773515
+        }
+      }
+    }
+  },
+  "conclusion": "Improvement or degradation must be interpreted from the measured delta, not assumed."
+}
