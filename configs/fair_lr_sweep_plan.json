@@ -1,0 +1,11 @@
+{
+  "status": "PLANNED_ONLY_NOT_EXECUTED",
+  "dataset": "LLP train/validation; no test use",
+  "models": ["baseline", "bigru", "transformer", "cross_modal"],
+  "candidate_learning_rates": [0.001, 0.0003],
+  "seeds": [42, 43, 44],
+  "fixed_epochs": 5,
+  "fixed_batch_size": 64,
+  "selection_metric": "validation event micro-F1 (custom pooled audio/visual GT)",
+  "fairness": "Equal candidate budget for each architecture; selected LR must be reported honestly."
+}

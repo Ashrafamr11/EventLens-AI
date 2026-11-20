@@ -1,0 +1,83 @@
+{
+  "hardware": "Linux-6.6.159+-x86_64-with-glibc2.39",
+  "pytorch": "2.14.1+cpu",
+  "benchmark": "Model-head inference only; CPU; one 10-second feature set",
+  "models": {
+    "baseline": {
+      "parameters": 694809,
+      "checkpoint_mib": 7.96,
+      "latency_mean_ms": 1.794,
+      "latency_sd_ms": 0.163,
+      "checkpoint_epoch": 4,
+      "optimizer_groups": [
+        {
+          "lr": 0.001,
+          "eps": 1e-08,
+          "weight_decay": 0.0001,
+          "amsgrad": false,
+          "maximize": false,
+          "capturable": false,
+          "differentiable": false,
+          "decoupled_weight_decay": true
+        }
+      ]
+    },
+    "bigru": {
+      "parameters": 991769,
+      "checkpoint_mib": 11.37,
+      "latency_mean_ms": 6.065,
+      "latency_sd_ms": 2.536,
+      "checkpoint_epoch": 5,
+      "optimizer_groups": [
+        {
+          "lr": 0.001,
+          "eps": 1e-08,
+          "weight_decay": 0.0001,
+          "amsgrad": false,
+          "maximize": false,
+          "capturable": false,
+          "differentiable": false,
+          "decoupled_weight_decay": true
+        }
+      ]
+    },
+    "transformer": {
+      "parameters": 481433,
+      "checkpoint_mib": 5.53,
+      "latency_mean_ms": 3.301,
+      "latency_sd_ms": 1.14,
+      "checkpoint_epoch": 5,
+      "optimizer_groups": [
+        {
+          "lr": 0.001,
+          "eps": 1e-08,
+          "weight_decay": 0.0001,
+          "amsgrad": false,
+          "maximize": false,
+          "capturable": false,
+          "differentiable": false,
+          "decoupled_weight_decay": true
+        }
+      ]
+    },
+    "cross_modal": {
+      "parameters": 616476,
+      "checkpoint_mib": 7.08,
+      "latency_mean_ms": 9.799,
+      "latency_sd_ms": 4.774,
+      "checkpoint_epoch": 5,
+      "optimizer_groups": [
+        {
+          "lr": 0.001,
+          "eps": 1e-08,
+          "weight_decay": 0.0001,
+          "amsgrad": false,
+          "maximize": false,
+          "capturable": false,
+          "differentiable": false,
+          "decoupled_weight_decay": true
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "experiment": "No-Audio Ablation",
+  "model": "BiGRU",
+  "removed_modality": "audio",
+  "seed": 44,
+  "epochs": 5,
+  "batch_size": 64,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "training_seconds": 152.61248351199993,
+  "best_val_loss": 0.10045625940998457,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.21219001183509828,
+      "val_loss": 0.20127016611293946
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.14888816492557524,
+      "val_loss": 0.12791052764892946
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.10460401494503022,
+      "val_loss": 0.1090632159555638
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.09128581366539001,
+      "val_loss": 0.10394776994807327
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.0846237867474556,
+      "val_loss": 0.10045625940998457
+    }
+  ]
+}

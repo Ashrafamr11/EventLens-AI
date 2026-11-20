@@ -1,0 +1,40 @@
+{
+  "model": "bigru",
+  "seed": 44,
+  "epochs": 5,
+  "batch_size": 64,
+  "optimizer": "AdamW",
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "hardware": "Tesla T4",
+  "parameters": 991769,
+  "training_seconds": 162.3242995319997,
+  "best_val_loss": 0.08305952789833072,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.21130960721969605,
+      "val_loss": 0.19644502703048783
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.14105546995401383,
+      "val_loss": 0.11829095452059582
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.09342241160869598,
+      "val_loss": 0.09630860818782462
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.07671667402982711,
+      "val_loss": 0.08977099960362783
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.06699590112566949,
+      "val_loss": 0.08305952789833072
+    }
+  ]
+}

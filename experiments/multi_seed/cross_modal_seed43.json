@@ -1,0 +1,40 @@
+{
+  "model": "cross_modal",
+  "seed": 43,
+  "epochs": 5,
+  "batch_size": 64,
+  "optimizer": "AdamW",
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "hardware": "Tesla T4",
+  "parameters": 616476,
+  "training_seconds": 165.4312387910004,
+  "best_val_loss": 0.12269991615612078,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.21585394487380982,
+      "val_loss": 0.22034258364437173
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.19926183054447175,
+      "val_loss": 0.21949448203452745
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.1829468797683716,
+      "val_loss": 0.17284631488044017
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.14036081185340882,
+      "val_loss": 0.14586929921835706
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.1181037300825119,
+      "val_loss": 0.12269991615612078
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "model": "transformer",
+  "seed": 44,
+  "epochs": 5,
+  "batch_size": 64,
+  "optimizer": "AdamW",
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "hardware": "Tesla T4",
+  "parameters": 481433,
+  "training_seconds": 164.19041733300037,
+  "best_val_loss": 0.07943464911475387,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.17716901715993882,
+      "val_loss": 0.1270351850632894
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.09533971992731094,
+      "val_loss": 0.09234978830318422
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.07324072107076644,
+      "val_loss": 0.0879845393445624
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.06373551052808761,
+      "val_loss": 0.08606196620224621
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.057379333031177523,
+      "val_loss": 0.07943464911475387
+    }
+  ]
+}

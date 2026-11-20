@@ -1,0 +1,20 @@
+{
+  "configuration": "Original five-epoch final model settings (record only)",
+  "model": "transformer",
+  "architecture": "Single Transformer encoder with learned 10-step positions",
+  "seed_set": [
+    42,
+    43,
+    44
+  ],
+  "epochs": 5,
+  "batch_size": 64,
+  "optimizer": "AdamW",
+  "lr": 0.001,
+  "weight_decay": 0.0001,
+  "train_loss": "clip BCEWithLogitsLoss",
+  "select_checkpoint": "best validation loss",
+  "source": "experiments/multi_seed_validation_metrics.json",
+  "not_run_by_this_config_file": true,
+  "caution": "This JSON describes saved historical results and is not itself evidence of new execution."
+}

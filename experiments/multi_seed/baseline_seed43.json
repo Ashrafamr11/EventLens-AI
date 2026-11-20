@@ -1,0 +1,40 @@
+{
+  "model": "baseline",
+  "seed": 43,
+  "epochs": 5,
+  "batch_size": 64,
+  "optimizer": "AdamW",
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "hardware": "Tesla T4",
+  "parameters": 694809,
+  "training_seconds": 160.6674131030004,
+  "best_val_loss": 0.09960695205741377,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.15129464038610457,
+      "val_loss": 0.12997324388181483
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.09537675576210022,
+      "val_loss": 0.11538352399421584
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.08414931483268738,
+      "val_loss": 0.10656963138394804
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.07748246567249298,
+      "val_loss": 0.10010847495797051
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.07246460635662079,
+      "val_loss": 0.09960695205741377
+    }
+  ]
+}

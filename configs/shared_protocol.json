@@ -1,0 +1,21 @@
+{
+  "study": "EventLens-AI four-model comparison protocol",
+  "dataset": "LLP ECCV-2020",
+  "train_clips": 10000,
+  "validation_clips": 649,
+  "held_out_test_clips": 1200,
+  "feature_shapes": {"audio": [10, 128], "visual": [10, 2048], "motion": [10, 512]},
+  "models": ["baseline", "bigru", "transformer", "cross_modal"],
+  "seeds": [42, 43, 44],
+  "optimizer": "AdamW",
+  "batch_size": 64,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "epochs": 5,
+  "loss": "clip-level BCEWithLogitsLoss using max-pooled segment logits",
+  "custom_eval_threshold": 0.5,
+  "custom_event_iou_threshold": 0.5,
+  "ground_truth": "audio_visual_union",
+  "original_hardware": "Tesla T4",
+  "disclosure": "This is the recorded final-configuration protocol, not an equal hyperparameter search budget."
+}
