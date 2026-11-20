@@ -1,0 +1,1460 @@
+{
+  "split": "validation",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "threshold": 0.5,
+  "event_iou_threshold": 0.5,
+  "ground_truth": "audio_visual_union",
+  "invalid_annotation_rows": 1,
+  "individual_runs": {
+    "baseline": {
+      "42": {
+        "clip": {
+          "precision": 0.9083333333333333,
+          "recall": 0.558974358974359,
+          "micro_f1": 0.692063492063492,
+          "macro_f1": 0.6347989757920403,
+          "per_class_f1": {
+            "Accordion": 0.84,
+            "Acoustic_guitar": 0.6329113924050633,
+            "Baby_cry_infant_cry": 0.6545454545454545,
+            "Baby_laughter": 0.5,
+            "Banjo": 0.35294117647058826,
+            "Basketball_bounce": 0.9565217391304348,
+            "Blender": 0.8717948717948718,
+            "Car": 0.6764705882352942,
+            "Cat": 0.625,
+            "Cello": 0.5,
+            "Chainsaw": 0.9411764705882353,
+            "Cheering": 0.38596491228070173,
+            "Chicken_rooster": 0.8852459016393442,
+            "Clapping": 0.0,
+            "Dog": 0.7755102040816326,
+            "Fire_alarm": 0.6666666666666666,
+            "Frying_(food)": 0.9411764705882353,
+            "Helicopter": 0.6792452830188679,
+            "Lawn_mower": 0.6666666666666666,
+            "Motorcycle": 0.7567567567567568,
+            "Singing": 0.3584905660377358,
+            "Speech": 0.7503782148260212,
+            "Telephone_bell_ringing": 0.0,
+            "Vacuum_cleaner": 0.6984126984126984,
+            "Violin_fiddle": 0.7540983606557377
+          }
+        },
+        "segment": {
+          "precision": 0.7951422963689893,
+          "recall": 0.3547504378283713,
+          "micro_f1": 0.4906145927944293,
+          "macro_f1": 0.449507356351281,
+          "per_class_f1": {
+            "Accordion": 0.7176220806794055,
+            "Acoustic_guitar": 0.5131034482758621,
+            "Baby_cry_infant_cry": 0.5395348837209303,
+            "Baby_laughter": 0.28888888888888886,
+            "Banjo": 0.18604651162790697,
+            "Basketball_bounce": 0.6182669789227166,
+            "Blender": 0.5559322033898305,
+            "Car": 0.4927536231884058,
+            "Cat": 0.37037037037037035,
+            "Cello": 0.2864721485411141,
+            "Chainsaw": 0.845360824742268,
+            "Cheering": 0.17415730337078653,
+            "Chicken_rooster": 0.7028112449799196,
+            "Clapping": 0.0,
+            "Dog": 0.5572139303482587,
+            "Fire_alarm": 0.36496350364963503,
+            "Frying_(food)": 0.8122866894197952,
+            "Helicopter": 0.5374449339207048,
+            "Lawn_mower": 0.38974358974358975,
+            "Motorcycle": 0.5704697986577181,
+            "Singing": 0.25742574257425743,
+            "Speech": 0.48922902494331066,
+            "Telephone_bell_ringing": 0.0,
+            "Vacuum_cleaner": 0.3925619834710744,
+            "Violin_fiddle": 0.5750242013552759
+          }
+        },
+        "event": {
+          "precision": 0.3403476669716377,
+          "recall": 0.2617874736101337,
+          "micro_f1": 0.29594272076372313,
+          "macro_f1": 0.2891303185792913,
+          "per_class_f1": {
+            "Accordion": 0.5925925925925926,
+            "Acoustic_guitar": 0.41304347826086957,
+            "Baby_cry_infant_cry": 0.45454545454545453,
+            "Baby_laughter": 0.25,
+            "Banjo": 0.1,
+            "Basketball_bounce": 0.32967032967032966,
+            "Blender": 0.24,
+            "Car": 0.275,
+            "Cat": 0.18604651162790697,
+            "Cello": 0.21818181818181817,
+            "Chainsaw": 0.6486486486486487,
+            "Cheering": 0.08,
+            "Chicken_rooster": 0.4,
+            "Clapping": 0.0,
+            "Dog": 0.30158730158730157,
+            "Fire_alarm": 0.16666666666666666,
+            "Frying_(food)": 0.5945945945945946,
+            "Helicopter": 0.42857142857142855,
+            "Lawn_mower": 0.14285714285714285,
+            "Motorcycle": 0.42857142857142855,
+            "Singing": 0.1388888888888889,
+            "Speech": 0.29365079365079366,
+            "Telephone_bell_ringing": 0.0,
+            "Vacuum_cleaner": 0.16216216216216217,
+            "Violin_fiddle": 0.3829787234042553
+          }
+        }
+      },
+      "43": {
+        "clip": {
+          "precision": 0.9458646616541353,
+          "recall": 0.5376068376068376,
+          "micro_f1": 0.685558583106267,
+          "macro_f1": 0.6634452191212484,
+          "per_class_f1": {
+            "Accordion": 0.84,
+            "Acoustic_guitar": 0.6410256410256411,
+            "Baby_cry_infant_cry": 0.6415094339622641,
+            "Baby_laughter": 0.4,
+            "Banjo": 0.6666666666666666,
+            "Basketball_bounce": 0.9411764705882353,
+            "Blender": 0.926829268292683,
+            "Car": 0.7164179104477612,
+            "Cat": 0.5806451612903226,
+            "Cello": 0.5,
+            "Chainsaw": 0.9411764705882353,
+            "Cheering": 0.23076923076923078,
+            "Chicken_rooster": 0.8852459016393442,
+            "Clapping": 0.0,
+            "Dog": 0.7878787878787878,
+            "Fire_alarm": 0.6666666666666666,
+            "Frying_(food)": 0.875,
+            "Helicopter": 0.90625,
+            "Lawn_mower": 0.7692307692307693,
+            "Motorcycle": 0.8292682926829268,
+            "Singing": 0.5573770491803278,
+            "Speech": 0.6429840142095915,
+            "Telephone_bell_ringing": 0.0,
+            "Vacuum_cleaner": 0.8493150684931506,
+            "Violin_fiddle": 0.7906976744186046
+          }
+        },
+        "segment": {
+          "precision": 0.8609164420485175,
+          "recall": 0.3496059544658494,
+          "micro_f1": 0.49727541647205353,
+          "macro_f1": 0.48422293287631213,
+          "per_class_f1": {
+            "Accordion": 0.7468879668049793,
+            "Acoustic_guitar": 0.5226960110041265,
+            "Baby_cry_infant_cry": 0.5190476190476191,
+            "Baby_laughter": 0.2727272727272727,
+            "Banjo": 0.5276073619631901,
+            "Basketball_bounce": 0.6235011990407674,
+            "Blender": 0.7616279069767442,
+            "Car": 0.44234404536862004,
+            "Cat": 0.3853211009174312,
+            "Cello": 0.28116710875331563,
+            "Chainsaw": 0.7985611510791367,
+            "Cheering": 0.0771513353115727,
+            "Chicken_rooster": 0.7182539682539683,
+            "Clapping": 0.0,
+            "Dog": 0.5229591836734694,
+            "Fire_alarm": 0.2222222222222222,
+            "Frying_(food)": 0.7158671586715867,
+            "Helicopter": 0.700587084148728,
+            "Lawn_mower": 0.579185520361991,
+            "Motorcycle": 0.6282051282051282,
+            "Singing": 0.3757159221076747,
+            "Speech": 0.3638888888888889,
+            "Telephone_bell_ringing": 0.0,
+            "Vacuum_cleaner": 0.7135842880523732,
+            "Violin_fiddle": 0.6064638783269962
+          }
+        },
+        "event": {
+          "precision": 0.35173824130879344,
+          "recall": 0.24208304011259676,
+          "micro_f1": 0.2867861609003752,
+          "macro_f1": 0.30978198928745543,
+          "per_class_f1": {
+            "Accordion": 0.6296296296296297,
+            "Acoustic_guitar": 0.42696629213483145,
+            "Baby_cry_infant_cry": 0.46875,
+            "Baby_laughter": 0.18181818181818182,
+            "Banjo": 0.38095238095238093,
+            "Basketball_bounce": 0.33707865168539325,
+            "Blender": 0.48,
+            "Car": 0.2222222222222222,
+            "Cat": 0.23809523809523808,
+            "Cello": 0.1509433962264151,
+            "Chainsaw": 0.55,
+            "Cheering": 0.03125,
+            "Chicken_rooster": 0.4533333333333333,
+            "Clapping": 0.0,
+            "Dog": 0.2601626016260163,
+            "Fire_alarm": 0.09523809523809523,
+            "Frying_(food)": 0.4864864864864865,
+            "Helicopter": 0.42857142857142855,
+            "Lawn_mower": 0.30303030303030304,
+            "Motorcycle": 0.3673469387755102,
+            "Singing": 0.18285714285714286,
+            "Speech": 0.22195416164053075,
+            "Telephone_bell_ringing": 0.0,
+            "Vacuum_cleaner": 0.4888888888888889,
+            "Violin_fiddle": 0.358974358974359
+          }
+        }
+      },
+      "44": {
+        "clip": {
+          "precision": 0.9153846153846154,
+          "recall": 0.6102564102564103,
+          "micro_f1": 0.7323076923076923,
+          "macro_f1": 0.6454780901204186,
+          "per_class_f1": {
+            "Accordion": 0.8163265306122449,
+            "Acoustic_guitar": 0.65,
+            "Baby_cry_infant_cry": 0.6666666666666666,
+            "Baby_laughter": 0.2857142857142857,
+            "Banjo": 0.35294117647058826,
+            "Basketball_bounce": 0.9253731343283582,
+            "Blender": 0.9523809523809523,
+            "Car": 0.7323943661971831,
+            "Cat": 0.5806451612903226,
+            "Cello": 0.6538461538461539,
+            "Chainsaw": 0.9411764705882353,
+            "Cheering": 0.4067796610169492,
+            "Chicken_rooster": 0.847457627118644,
+            "Clapping": 0.0,
+            "Dog": 0.803921568627451,
+            "Fire_alarm": 0.15384615384615385,
+            "Frying_(food)": 0.9411764705882353,
+            "Helicopter": 0.8524590163934426,
+            "Lawn_mower": 0.7692307692307693,
+            "Motorcycle": 0.7428571428571429,
+            "Singing": 0.6231884057971014,
+            "Speech": 0.7781155015197568,
+            "Telephone_bell_ringing": 0.0,
+            "Vacuum_cleaner": 0.8450704225352113,
+            "Violin_fiddle": 0.8153846153846154
+          }
+        },
+        "segment": {
+          "precision": 0.8250336473755047,
+          "recall": 0.4025831873905429,
+          "micro_f1": 0.5411210828306606,
+          "macro_f1": 0.48450623023806183,
+          "per_class_f1": {
+            "Accordion": 0.7176220806794055,
+            "Acoustic_guitar": 0.5317139001349528,
+            "Baby_cry_infant_cry": 0.5668934240362812,
+            "Baby_laughter": 0.25,
+            "Banjo": 0.291970802919708,
+            "Basketball_bounce": 0.6086956521739131,
+            "Blender": 0.750733137829912,
+            "Car": 0.5542168674698795,
+            "Cat": 0.3474178403755869,
+            "Cello": 0.4852607709750567,
+            "Chainsaw": 0.8532423208191127,
+            "Cheering": 0.24533333333333332,
+            "Chicken_rooster": 0.6923076923076923,
+            "Clapping": 0.0,
+            "Dog": 0.6223277909738717,
+            "Fire_alarm": 0.017699115044247787,
+            "Frying_(food)": 0.8243243243243243,
+            "Helicopter": 0.6585858585858586,
+            "Lawn_mower": 0.46078431372549017,
+            "Motorcycle": 0.41198501872659177,
+            "Singing": 0.3969465648854962,
+            "Speech": 0.5092699884125145,
+            "Telephone_bell_ringing": 0.0,
+            "Vacuum_cleaner": 0.6632302405498282,
+            "Violin_fiddle": 0.6520947176684881
+          }
+        },
+        "event": {
+          "precision": 0.35537190082644626,
+          "recall": 0.30260380014074595,
+          "micro_f1": 0.32687191182060055,
+          "macro_f1": 0.3087486399071693,
+          "per_class_f1": {
+            "Accordion": 0.5714285714285714,
+            "Acoustic_guitar": 0.40816326530612246,
+            "Baby_cry_infant_cry": 0.5,
+            "Baby_laughter": 0.2727272727272727,
+            "Banjo": 0.21052631578947367,
+            "Basketball_bounce": 0.3695652173913043,
+            "Blender": 0.38596491228070173,
+            "Car": 0.27586206896551724,
+            "Cat": 0.19047619047619047,
+            "Cello": 0.31746031746031744,
+            "Chainsaw": 0.6666666666666666,
+            "Cheering": 0.024691358024691357,
+            "Chicken_rooster": 0.40540540540540543,
+            "Clapping": 0.0,
+            "Dog": 0.36923076923076925,
+            "Fire_alarm": 0.0,
+            "Frying_(food)": 0.5789473684210527,
+            "Helicopter": 0.48484848484848486,
+            "Lawn_mower": 0.125,
+            "Motorcycle": 0.20512820512820512,
+            "Singing": 0.19387755102040816,
+            "Speech": 0.32245301681503463,
+            "Telephone_bell_ringing": 0.0,
+            "Vacuum_cleaner": 0.37362637362637363,
+            "Violin_fiddle": 0.4666666666666667
+          }
+        }
+      }
+    },
+    "bigru": {
+      "42": {
+        "clip": {
+          "precision": 0.8790233074361821,
+          "recall": 0.676923076923077,
+          "micro_f1": 0.7648478995654273,
+          "macro_f1": 0.6905065463974677,
+          "per_class_f1": {
+            "Accordion": 0.9,
+            "Acoustic_guitar": 0.6829268292682927,
+            "Baby_cry_infant_cry": 0.6274509803921569,
+            "Baby_laughter": 0.0,
+            "Banjo": 0.4444444444444444,
+            "Basketball_bounce": 0.9565217391304348,
+            "Blender": 0.9545454545454546,
+            "Car": 0.7671232876712328,
+            "Cat": 0.4444444444444444,
+            "Cello": 0.5957446808510638,
+            "Chainsaw": 0.9411764705882353,
+            "Cheering": 0.4918032786885246,
+            "Chicken_rooster": 0.8955223880597015,
+            "Clapping": 0.0,
+            "Dog": 0.8727272727272727,
+            "Fire_alarm": 0.8571428571428571,
+            "Frying_(food)": 0.9142857142857143,
+            "Helicopter": 0.8888888888888888,
+            "Lawn_mower": 0.8666666666666667,
+            "Motorcycle": 0.9090909090909091,
+            "Singing": 0.7738095238095238,
+            "Speech": 0.7736389684813754,
+            "Telephone_bell_ringing": 0.0,
+            "Vacuum_cleaner": 0.9367088607594937,
+            "Violin_fiddle": 0.768
+          }
+        },
+        "segment": {
+          "precision": 0.7589049161024434,
+          "recall": 0.5643607705779334,
+          "micro_f1": 0.6473320778405525,
+          "macro_f1": 0.5973928975599142,
+          "per_class_f1": {
+            "Accordion": 0.8560885608856088,
+            "Acoustic_guitar": 0.6062893081761006,
+            "Baby_cry_infant_cry": 0.5458715596330275,
+            "Baby_laughter": 0.0,
+            "Banjo": 0.23703703703703705,
+            "Basketball_bounce": 0.6124401913875598,
+            "Blender": 0.9359605911330049,
+            "Car": 0.6677265500794912,
+            "Cat": 0.30917874396135264,
+            "Cello": 0.4339622641509434,
+            "Chainsaw": 0.8874172185430463,
+            "Cheering": 0.48623853211009177,
+            "Chicken_rooster": 0.8633333333333333,
+            "Clapping": 0.0,
+            "Dog": 0.7829698857736241,
+            "Fire_alarm": 0.7344632768361582,
+            "Frying_(food)": 0.8782051282051282,
+            "Helicopter": 0.8247787610619469,
+            "Lawn_mower": 0.8296296296296296,
+            "Motorcycle": 0.7457627118644068,
+            "Singing": 0.6197411003236246,
+            "Speech": 0.5752153744201458,
+            "Telephone_bell_ringing": 0.0,
+            "Vacuum_cleaner": 0.8497854077253219,
+            "Violin_fiddle": 0.6527272727272727
+          }
+        },
+        "event": {
+          "precision": 0.5143120960295475,
+          "recall": 0.3919774806474314,
+          "micro_f1": 0.444888178913738,
+          "macro_f1": 0.457659491438541,
+          "per_class_f1": {
+            "Accordion": 0.6865671641791045,
+            "Acoustic_guitar": 0.5454545454545454,
+            "Baby_cry_infant_cry": 0.5,
+            "Baby_laughter": 0.0,
+            "Banjo": 0.10526315789473684,
+            "Basketball_bounce": 0.32558139534883723,
+            "Blender": 0.8163265306122449,
+            "Car": 0.5789473684210527,
+            "Cat": 0.16216216216216217,
+            "Cello": 0.375,
+            "Chainsaw": 0.6666666666666666,
+            "Cheering": 0.273972602739726,
+            "Chicken_rooster": 0.6666666666666666,
+            "Clapping": 0.0,
+            "Dog": 0.5538461538461539,
+            "Fire_alarm": 0.38461538461538464,
+            "Frying_(food)": 0.7777777777777778,
+            "Helicopter": 0.7164179104477612,
+            "Lawn_mower": 0.7272727272727273,
+            "Motorcycle": 0.5,
+            "Singing": 0.4682926829268293,
+            "Speech": 0.3450479233226837,
+            "Telephone_bell_ringing": 0.0,
+            "Vacuum_cleaner": 0.7619047619047619,
+            "Violin_fiddle": 0.5037037037037037
+          }
+        }
+      },
+      "43": {
+        "clip": {
+          "precision": 0.8554729011689692,
+          "recall": 0.688034188034188,
+          "micro_f1": 0.7626717195641876,
+          "macro_f1": 0.6917364776768224,
+          "per_class_f1": {
+            "Accordion": 0.8627450980392157,
+            "Acoustic_guitar": 0.6829268292682927,
+            "Baby_cry_infant_cry": 0.6944444444444444,
+            "Baby_laughter": 0.0,
+            "Banjo": 0.5714285714285714,
+            "Basketball_bounce": 0.9714285714285714,
+            "Blender": 0.9523809523809523,
+            "Car": 0.7323943661971831,
+            "Cat": 0.5625,
+            "Cello": 0.5531914893617021,
+            "Chainsaw": 0.9411764705882353,
+            "Cheering": 0.5970149253731343,
+            "Chicken_rooster": 0.90625,
+            "Clapping": 0.0,
+            "Dog": 0.8349514563106796,
+            "Fire_alarm": 0.8695652173913043,
+            "Frying_(food)": 0.9411764705882353,
+            "Helicopter": 0.8709677419354839,
+            "Lawn_mower": 0.8125,
+            "Motorcycle": 0.8636363636363636,
+            "Singing": 0.59375,
+            "Speech": 0.7989130434782609,
+            "Telephone_bell_ringing": 0.0,
+            "Vacuum_cleaner": 0.8409090909090909,
+            "Violin_fiddle": 0.8391608391608392
+          }
+        },
+        "segment": {
+          "precision": 0.7340739699057798,
+          "recall": 0.5713660245183888,
+          "micro_f1": 0.6425801686465193,
+          "macro_f1": 0.6001414791625858,
+          "per_class_f1": {
+            "Accordion": 0.7468879668049793,
+            "Acoustic_guitar": 0.5774278215223098,
+            "Baby_cry_infant_cry": 0.6428571428571429,
+            "Baby_laughter": 0.0,
+            "Banjo": 0.5,
+            "Basketball_bounce": 0.591792656587473,
+            "Blender": 0.864,
+            "Car": 0.5990016638935108,
+            "Cat": 0.5411764705882353,
+            "Cello": 0.4372093023255814,
+            "Chainsaw": 0.8762541806020067,
+            "Cheering": 0.49321266968325794,
+            "Chicken_rooster": 0.8495575221238938,
+            "Clapping": 0.0,
+            "Dog": 0.7508090614886731,
+            "Fire_alarm": 0.7231638418079096,
+            "Frying_(food)": 0.8627450980392157,
+            "Helicopter": 0.7771639042357275,
+            "Lawn_mower": 0.7940074906367042,
+            "Motorcycle": 0.7134502923976608,
+            "Singing": 0.44723092998955066,
+            "Speech": 0.599628329547801,
+            "Telephone_bell_ringing": 0.0,
+            "Vacuum_cleaner": 0.8621997471554994,
+            "Violin_fiddle": 0.7537608867775138
+          }
+        },
+        "event": {
+          "precision": 0.4771354616048318,
+          "recall": 0.3891625615763547,
+          "micro_f1": 0.42868217054263563,
+          "macro_f1": 0.43781245597997137,
+          "per_class_f1": {
+            "Accordion": 0.6181818181818182,
+            "Acoustic_guitar": 0.45652173913043476,
+            "Baby_cry_infant_cry": 0.4883720930232558,
+            "Baby_laughter": 0.0,
+            "Banjo": 0.36363636363636365,
+            "Basketball_bounce": 0.27586206896551724,
+            "Blender": 0.7346938775510204,
+            "Car": 0.3950617283950617,
+            "Cat": 0.38095238095238093,
+            "Cello": 0.36,
+            "Chainsaw": 0.6857142857142857,
+            "Cheering": 0.27848101265822783,
+            "Chicken_rooster": 0.6216216216216216,
+            "Clapping": 0.0,
+            "Dog": 0.5196850393700787,
+            "Fire_alarm": 0.3125,
+            "Frying_(food)": 0.7647058823529411,
+            "Helicopter": 0.7096774193548387,
+            "Lawn_mower": 0.5405405405405406,
+            "Motorcycle": 0.44,
+            "Singing": 0.3,
+            "Speech": 0.36639676113360325,
+            "Telephone_bell_ringing": 0.0,
+            "Vacuum_cleaner": 0.7142857142857143,
+            "Violin_fiddle": 0.618421052631579
+          }
+        }
+      },
+      "44": {
+        "clip": {
+          "precision": 0.851129363449692,
+          "recall": 0.7085470085470086,
+          "micro_f1": 0.773320895522388,
+          "macro_f1": 0.7055024952390688,
+          "per_class_f1": {
+            "Accordion": 0.84,
+            "Acoustic_guitar": 0.7142857142857143,
+            "Baby_cry_infant_cry": 0.7297297297297297,
+            "Baby_laughter": 0.0,
+            "Banjo": 0.5454545454545454,
+            "Basketball_bounce": 0.9565217391304348,
+            "Blender": 0.9767441860465116,
+            "Car": 0.7654320987654321,
+            "Cat": 0.6,
+            "Cello": 0.6666666666666666,
+            "Chainsaw": 0.9411764705882353,
+            "Cheering": 0.6835443037974683,
+            "Chicken_rooster": 0.9206349206349206,
+            "Clapping": 0.0,
+            "Dog": 0.8828828828828829,
+            "Fire_alarm": 0.7857142857142857,
+            "Frying_(food)": 0.9411764705882353,
+            "Helicopter": 0.8888888888888888,
+            "Lawn_mower": 0.8571428571428571,
+            "Motorcycle": 0.7222222222222222,
+            "Singing": 0.7189542483660131,
+            "Speech": 0.7834757834757835,
+            "Telephone_bell_ringing": 0.0,
+            "Vacuum_cleaner": 0.8888888888888888,
+            "Violin_fiddle": 0.8280254777070064
+          }
+        },
+        "segment": {
+          "precision": 0.7466666666666667,
+          "recall": 0.6068301225919439,
+          "micro_f1": 0.6695247871505344,
+          "macro_f1": 0.6273867609144501,
+          "per_class_f1": {
+            "Accordion": 0.7416666666666667,
+            "Acoustic_guitar": 0.5941101152368758,
+            "Baby_cry_infant_cry": 0.6634304207119741,
+            "Baby_laughter": 0.0,
+            "Banjo": 0.47674418604651164,
+            "Basketball_bounce": 0.5947136563876652,
+            "Blender": 0.9187817258883249,
+            "Car": 0.75,
+            "Cat": 0.49137931034482757,
+            "Cello": 0.563265306122449,
+            "Chainsaw": 0.9019607843137255,
+            "Cheering": 0.6372007366482505,
+            "Chicken_rooster": 0.8381294964028777,
+            "Clapping": 0.0,
+            "Dog": 0.8349900596421471,
+            "Fire_alarm": 0.8699551569506726,
+            "Frying_(food)": 0.8627450980392157,
+            "Helicopter": 0.8289241622574955,
+            "Lawn_mower": 0.749003984063745,
+            "Motorcycle": 0.5704697986577181,
+            "Singing": 0.5524663677130045,
+            "Speech": 0.5891844744875708,
+            "Telephone_bell_ringing": 0.0,
+            "Vacuum_cleaner": 0.8778523489932886,
+            "Violin_fiddle": 0.7776951672862453
+          }
+        },
+        "event": {
+          "precision": 0.5107851596203624,
+          "recall": 0.4166080225193526,
+          "micro_f1": 0.45891472868217054,
+          "macro_f1": 0.480612858550015,
+          "per_class_f1": {
+            "Accordion": 0.6296296296296297,
+            "Acoustic_guitar": 0.5217391304347826,
+            "Baby_cry_infant_cry": 0.5,
+            "Baby_laughter": 0.0,
+            "Banjo": 0.2727272727272727,
+            "Basketball_bounce": 0.2857142857142857,
+            "Blender": 0.8085106382978723,
+            "Car": 0.6506024096385542,
+            "Cat": 0.35,
+            "Cello": 0.4307692307692308,
+            "Chainsaw": 0.6486486486486487,
+            "Cheering": 0.37362637362637363,
+            "Chicken_rooster": 0.5833333333333334,
+            "Clapping": 0.0,
+            "Dog": 0.7333333333333333,
+            "Fire_alarm": 0.6470588235294118,
+            "Frying_(food)": 0.8,
+            "Helicopter": 0.7936507936507936,
+            "Lawn_mower": 0.5454545454545454,
+            "Motorcycle": 0.32558139534883723,
+            "Singing": 0.39378238341968913,
+            "Speech": 0.3479188900747065,
+            "Telephone_bell_ringing": 0.0,
+            "Vacuum_cleaner": 0.7640449438202247,
+            "Violin_fiddle": 0.6091954022988506
+          }
+        }
+      }
+    },
+    "transformer": {
+      "42": {
+        "clip": {
+          "precision": 0.8964241676942046,
+          "recall": 0.6213675213675214,
+          "micro_f1": 0.7339727410398789,
+          "macro_f1": 0.695184513068508,
+          "per_class_f1": {
+            "Accordion": 0.9090909090909091,
+            "Acoustic_guitar": 0.6904761904761905,
+            "Baby_cry_infant_cry": 0.7105263157894737,
+            "Baby_laughter": 0.0,
+            "Banjo": 0.5263157894736842,
+            "Basketball_bounce": 0.9714285714285714,
+            "Blender": 1.0,
+            "Car": 0.7246376811594203,
+            "Cat": 0.625,
+            "Cello": 0.6545454545454545,
+            "Chainsaw": 1.0,
+            "Cheering": 0.41379310344827586,
+            "Chicken_rooster": 0.8923076923076924,
+            "Clapping": 0.0,
+            "Dog": 0.82,
+            "Fire_alarm": 0.7368421052631579,
+            "Frying_(food)": 0.9411764705882353,
+            "Helicopter": 0.8709677419354839,
+            "Lawn_mower": 0.8571428571428571,
+            "Motorcycle": 0.926829268292683,
+            "Singing": 0.6944444444444444,
+            "Speech": 0.6821963394342762,
+            "Telephone_bell_ringing": 0.0,
+            "Vacuum_cleaner": 0.8918918918918919,
+            "Violin_fiddle": 0.84
+          }
+        },
+        "segment": {
+          "precision": 0.796549245147376,
+          "recall": 0.4851138353765324,
+          "micro_f1": 0.6029931972789115,
+          "macro_f1": 0.5722333805742028,
+          "per_class_f1": {
+            "Accordion": 0.8187134502923976,
+            "Acoustic_guitar": 0.606516290726817,
+            "Baby_cry_infant_cry": 0.6666666666666666,
+            "Baby_laughter": 0.0,
+            "Banjo": 0.45161290322580644,
+            "Basketball_bounce": 0.5847457627118644,
+            "Blender": 0.9458128078817734,
+            "Car": 0.509090909090909,
+            "Cat": 0.49586776859504134,
+            "Cello": 0.5818181818181818,
+            "Chainsaw": 0.9090909090909091,
+            "Cheering": 0.3028720626631854,
+            "Chicken_rooster": 0.8132635253054101,
+            "Clapping": 0.0,
+            "Dog": 0.6542491268917345,
+            "Fire_alarm": 0.3157894736842105,
+            "Frying_(food)": 0.8243243243243243,
+            "Helicopter": 0.8330404217926186,
+            "Lawn_mower": 0.6861924686192469,
+            "Motorcycle": 0.8176795580110497,
+            "Singing": 0.5239005736137667,
+            "Speech": 0.4352517985611511,
+            "Telephone_bell_ringing": 0.0,
+            "Vacuum_cleaner": 0.768025078369906,
+            "Violin_fiddle": 0.7613104524180967
+          }
+        },
+        "event": {
+          "precision": 0.4084995663486557,
+          "recall": 0.3314567206192822,
+          "micro_f1": 0.36596736596736595,
+          "macro_f1": 0.39084500880348544,
+          "per_class_f1": {
+            "Accordion": 0.6129032258064516,
+            "Acoustic_guitar": 0.4742268041237113,
+            "Baby_cry_infant_cry": 0.4888888888888889,
+            "Baby_laughter": 0.0,
+            "Banjo": 0.16666666666666666,
+            "Basketball_bounce": 0.3146067415730337,
+            "Blender": 0.7843137254901961,
+            "Car": 0.33766233766233766,
+            "Cat": 0.24489795918367346,
+            "Cello": 0.4375,
+            "Chainsaw": 0.6842105263157895,
+            "Cheering": 0.07894736842105263,
+            "Chicken_rooster": 0.5569620253164557,
+            "Clapping": 0.0,
+            "Dog": 0.42276422764227645,
+            "Fire_alarm": 0.08695652173913043,
+            "Frying_(food)": 0.6111111111111112,
+            "Helicopter": 0.7272727272727273,
+            "Lawn_mower": 0.5,
+            "Motorcycle": 0.6,
+            "Singing": 0.27488151658767773,
+            "Speech": 0.25675675675675674,
+            "Telephone_bell_ringing": 0.0,
+            "Vacuum_cleaner": 0.5652173913043478,
+            "Violin_fiddle": 0.5443786982248521
+          }
+        }
+      },
+      "43": {
+        "clip": {
+          "precision": 0.8842337375964718,
+          "recall": 0.6854700854700855,
+          "micro_f1": 0.772267693789119,
+          "macro_f1": 0.7526766263053449,
+          "per_class_f1": {
+            "Accordion": 0.9285714285714286,
+            "Acoustic_guitar": 0.691358024691358,
+            "Baby_cry_infant_cry": 0.7352941176470589,
+            "Baby_laughter": 0.631578947368421,
+            "Banjo": 0.6956521739130435,
+            "Basketball_bounce": 0.9859154929577465,
+            "Blender": 0.9777777777777777,
+            "Car": 0.7671232876712328,
+            "Cat": 0.6060606060606061,
+            "Cello": 0.6792452830188679,
+            "Chainsaw": 0.9411764705882353,
+            "Cheering": 0.6582278481012658,
+            "Chicken_rooster": 0.8852459016393442,
+            "Clapping": 0.043478260869565216,
+            "Dog": 0.8468468468468469,
+            "Fire_alarm": 0.9230769230769231,
+            "Frying_(food)": 0.9142857142857143,
+            "Helicopter": 0.9253731343283582,
+            "Lawn_mower": 0.6666666666666666,
+            "Motorcycle": 0.9,
+            "Singing": 0.7142857142857143,
+            "Speech": 0.7449139280125195,
+            "Telephone_bell_ringing": 0.2,
+            "Vacuum_cleaner": 0.8780487804878049,
+            "Violin_fiddle": 0.8767123287671232
+          }
+        },
+        "segment": {
+          "precision": 0.8149937655860349,
+          "recall": 0.5723511383537653,
+          "micro_f1": 0.6724537037037037,
+          "macro_f1": 0.6657210128779293,
+          "per_class_f1": {
+            "Accordion": 0.8255813953488372,
+            "Acoustic_guitar": 0.5919165580182529,
+            "Baby_cry_infant_cry": 0.6653620352250489,
+            "Baby_laughter": 0.3877551020408163,
+            "Banjo": 0.6171428571428571,
+            "Basketball_bounce": 0.5951859956236324,
+            "Blender": 0.9519230769230769,
+            "Car": 0.6634920634920635,
+            "Cat": 0.5220883534136547,
+            "Cello": 0.5557894736842105,
+            "Chainsaw": 0.8874172185430463,
+            "Cheering": 0.6964285714285714,
+            "Chicken_rooster": 0.7970204841713222,
+            "Clapping": 0.007352941176470588,
+            "Dog": 0.8163672654690619,
+            "Fire_alarm": 0.9056603773584906,
+            "Frying_(food)": 0.9040247678018576,
+            "Helicopter": 0.8837209302325582,
+            "Lawn_mower": 0.8012820512820513,
+            "Motorcycle": 0.7228915662650602,
+            "Singing": 0.5265265265265265,
+            "Speech": 0.5528973950026581,
+            "Telephone_bell_ringing": 0.13793103448275862,
+            "Vacuum_cleaner": 0.8728246318607764,
+            "Violin_fiddle": 0.7544426494345718
+          }
+        },
+        "event": {
+          "precision": 0.4488067744418784,
+          "recall": 0.41027445460942996,
+          "micro_f1": 0.42867647058823527,
+          "macro_f1": 0.4766500237358424,
+          "per_class_f1": {
+            "Accordion": 0.5757575757575758,
+            "Acoustic_guitar": 0.4583333333333333,
+            "Baby_cry_infant_cry": 0.37777777777777777,
+            "Baby_laughter": 0.26666666666666666,
+            "Banjo": 0.5,
+            "Basketball_bounce": 0.29213483146067415,
+            "Blender": 0.7692307692307693,
+            "Car": 0.4235294117647059,
+            "Cat": 0.3333333333333333,
+            "Cello": 0.4262295081967213,
+            "Chainsaw": 0.7428571428571429,
+            "Cheering": 0.3925233644859813,
+            "Chicken_rooster": 0.5633802816901409,
+            "Clapping": 0.0,
+            "Dog": 0.5652173913043478,
+            "Fire_alarm": 0.5405405405405406,
+            "Frying_(food)": 0.8333333333333334,
+            "Helicopter": 0.7297297297297297,
+            "Lawn_mower": 0.5777777777777777,
+            "Motorcycle": 0.5106382978723404,
+            "Singing": 0.38341968911917096,
+            "Speech": 0.33755274261603374,
+            "Telephone_bell_ringing": 0.14285714285714285,
+            "Vacuum_cleaner": 0.6956521739130435,
+            "Violin_fiddle": 0.4777777777777778
+          }
+        }
+      },
+      "44": {
+        "clip": {
+          "precision": 0.8607983623336745,
+          "recall": 0.7188034188034188,
+          "micro_f1": 0.783418723800652,
+          "macro_f1": 0.7306254141625927,
+          "per_class_f1": {
+            "Accordion": 0.8163265306122449,
+            "Acoustic_guitar": 0.7142857142857143,
+            "Baby_cry_infant_cry": 0.7605633802816901,
+            "Baby_laughter": 0.2857142857142857,
+            "Banjo": 0.7272727272727273,
+            "Basketball_bounce": 0.9859154929577465,
+            "Blender": 0.9767441860465116,
+            "Car": 0.7951807228915663,
+            "Cat": 0.5517241379310345,
+            "Cello": 0.7142857142857143,
+            "Chainsaw": 0.9411764705882353,
+            "Cheering": 0.6382978723404256,
+            "Chicken_rooster": 0.8888888888888888,
+            "Clapping": 0.043478260869565216,
+            "Dog": 0.8727272727272727,
+            "Fire_alarm": 0.88,
+            "Frying_(food)": 0.9411764705882353,
+            "Helicopter": 0.8615384615384616,
+            "Lawn_mower": 0.8387096774193549,
+            "Motorcycle": 0.7428571428571429,
+            "Singing": 0.7770700636942676,
+            "Speech": 0.7861271676300579,
+            "Telephone_bell_ringing": 0.0,
+            "Vacuum_cleaner": 0.8505747126436781,
+            "Violin_fiddle": 0.875
+          }
+        },
+        "segment": {
+          "precision": 0.7786357786357786,
+          "recall": 0.595993870402802,
+          "micro_f1": 0.6751813503627008,
+          "macro_f1": 0.631028243695892,
+          "per_class_f1": {
+            "Accordion": 0.7468879668049793,
+            "Acoustic_guitar": 0.5784695201037614,
+            "Baby_cry_infant_cry": 0.6865148861646234,
+            "Baby_laughter": 0.05063291139240506,
+            "Banjo": 0.5276073619631901,
+            "Basketball_bounce": 0.5897435897435898,
+            "Blender": 0.8848167539267016,
+            "Car": 0.7668539325842697,
+            "Cat": 0.4375,
+            "Cello": 0.6032388663967612,
+            "Chainsaw": 0.8874172185430463,
+            "Cheering": 0.6714905933429812,
+            "Chicken_rooster": 0.819672131147541,
+            "Clapping": 0.021897810218978103,
+            "Dog": 0.7913223140495868,
+            "Fire_alarm": 0.8390243902439024,
+            "Frying_(food)": 0.8789808917197452,
+            "Helicopter": 0.8600682593856656,
+            "Lawn_mower": 0.7749077490774908,
+            "Motorcycle": 0.532871972318339,
+            "Singing": 0.6026666666666667,
+            "Speech": 0.6024963994239079,
+            "Telephone_bell_ringing": 0.0,
+            "Vacuum_cleaner": 0.8665785997357992,
+            "Violin_fiddle": 0.7540453074433657
+          }
+        },
+        "event": {
+          "precision": 0.4450909090909091,
+          "recall": 0.4306826178747361,
+          "micro_f1": 0.43776824034334766,
+          "macro_f1": 0.451615537575411,
+          "per_class_f1": {
+            "Accordion": 0.6792452830188679,
+            "Acoustic_guitar": 0.43137254901960786,
+            "Baby_cry_infant_cry": 0.46153846153846156,
+            "Baby_laughter": 0.0,
+            "Banjo": 0.3076923076923077,
+            "Basketball_bounce": 0.26666666666666666,
+            "Blender": 0.7058823529411765,
+            "Car": 0.6067415730337079,
+            "Cat": 0.2926829268292683,
+            "Cello": 0.46153846153846156,
+            "Chainsaw": 0.6486486486486487,
+            "Cheering": 0.3937007874015748,
+            "Chicken_rooster": 0.5753424657534246,
+            "Clapping": 0.0,
+            "Dog": 0.5891472868217055,
+            "Fire_alarm": 0.4864864864864865,
+            "Frying_(food)": 0.8,
+            "Helicopter": 0.6944444444444444,
+            "Lawn_mower": 0.6470588235294118,
+            "Motorcycle": 0.3333333333333333,
+            "Singing": 0.4018264840182648,
+            "Speech": 0.3650637880274779,
+            "Telephone_bell_ringing": 0.0,
+            "Vacuum_cleaner": 0.5740740740740741,
+            "Violin_fiddle": 0.5679012345679012
+          }
+        }
+      }
+    },
+    "cross_modal": {
+      "42": {
+        "clip": {
+          "precision": 0.8147590361445783,
+          "recall": 0.4623931623931624,
+          "micro_f1": 0.5899672846237731,
+          "macro_f1": 0.2839387607510253,
+          "per_class_f1": {
+            "Accordion": 0.9122807017543859,
+            "Acoustic_guitar": 0.5974025974025974,
+            "Baby_cry_infant_cry": 0.0,
+            "Baby_laughter": 0.0,
+            "Banjo": 0.0,
+            "Basketball_bounce": 0.8387096774193549,
+            "Blender": 0.0,
+            "Car": 0.0,
+            "Cat": 0.0,
+            "Cello": 0.5217391304347826,
+            "Chainsaw": 0.0,
+            "Cheering": 0.3793103448275862,
+            "Chicken_rooster": 0.05714285714285714,
+            "Clapping": 0.0,
+            "Dog": 0.7603305785123967,
+            "Fire_alarm": 0.0,
+            "Frying_(food)": 0.0,
+            "Helicopter": 0.17777777777777778,
+            "Lawn_mower": 0.0,
+            "Motorcycle": 0.0,
+            "Singing": 0.7468354430379747,
+            "Speech": 0.7496382054992764,
+            "Telephone_bell_ringing": 0.0,
+            "Vacuum_cleaner": 0.5263157894736842,
+            "Violin_fiddle": 0.8309859154929577
+          }
+        },
+        "segment": {
+          "precision": 0.6835798062213156,
+          "recall": 0.29345446584938706,
+          "micro_f1": 0.41062949915760455,
+          "macro_f1": 0.19253397753326418,
+          "per_class_f1": {
+            "Accordion": 0.8194174757281554,
+            "Acoustic_guitar": 0.3783783783783784,
+            "Baby_cry_infant_cry": 0.0,
+            "Baby_laughter": 0.0,
+            "Banjo": 0.0,
+            "Basketball_bounce": 0.4641638225255973,
+            "Blender": 0.0,
+            "Car": 0.0,
+            "Cat": 0.0,
+            "Cello": 0.3582089552238806,
+            "Chainsaw": 0.0,
+            "Cheering": 0.22888283378746593,
+            "Chicken_rooster": 0.006172839506172839,
+            "Clapping": 0.0,
+            "Dog": 0.7233201581027668,
+            "Fire_alarm": 0.0,
+            "Frying_(food)": 0.0,
+            "Helicopter": 0.023391812865497075,
+            "Lawn_mower": 0.0,
+            "Motorcycle": 0.0,
+            "Singing": 0.49085659287776706,
+            "Speech": 0.5371900826446281,
+            "Telephone_bell_ringing": 0.0,
+            "Vacuum_cleaner": 0.07407407407407407,
+            "Violin_fiddle": 0.7092924126172208
+          }
+        },
+        "event": {
+          "precision": 0.337782340862423,
+          "recall": 0.2315270935960591,
+          "micro_f1": 0.2747390396659708,
+          "macro_f1": 0.11899305103601268,
+          "per_class_f1": {
+            "Accordion": 0.6086956521739131,
+            "Acoustic_guitar": 0.26373626373626374,
+            "Baby_cry_infant_cry": 0.0,
+            "Baby_laughter": 0.0,
+            "Banjo": 0.0,
+            "Basketball_bounce": 0.21978021978021978,
+            "Blender": 0.0,
+            "Car": 0.0,
+            "Cat": 0.0,
+            "Cello": 0.25925925925925924,
+            "Chainsaw": 0.0,
+            "Cheering": 0.08450704225352113,
+            "Chicken_rooster": 0.0,
+            "Clapping": 0.0,
+            "Dog": 0.48,
+            "Fire_alarm": 0.0,
+            "Frying_(food)": 0.0,
+            "Helicopter": 0.0,
+            "Lawn_mower": 0.0,
+            "Motorcycle": 0.0,
+            "Singing": 0.2231404958677686,
+            "Speech": 0.34468937875751504,
+            "Telephone_bell_ringing": 0.0,
+            "Vacuum_cleaner": 0.0,
+            "Violin_fiddle": 0.49101796407185627
+          }
+        }
+      },
+      "43": {
+        "clip": {
+          "precision": 0.8202614379084967,
+          "recall": 0.42905982905982903,
+          "micro_f1": 0.5634118967452301,
+          "macro_f1": 0.27883588171658524,
+          "per_class_f1": {
+            "Accordion": 0.7916666666666666,
+            "Acoustic_guitar": 0.2711864406779661,
+            "Baby_cry_infant_cry": 0.0,
+            "Baby_laughter": 0.0,
+            "Banjo": 0.0,
+            "Basketball_bounce": 0.32558139534883723,
+            "Blender": 0.0,
+            "Car": 0.0,
+            "Cat": 0.0,
+            "Cello": 0.6896551724137931,
+            "Chainsaw": 0.0,
+            "Cheering": 0.5135135135135135,
+            "Chicken_rooster": 0.0,
+            "Clapping": 0.0,
+            "Dog": 0.7142857142857143,
+            "Fire_alarm": 0.0,
+            "Frying_(food)": 0.6428571428571429,
+            "Helicopter": 0.8923076923076924,
+            "Lawn_mower": 0.0,
+            "Motorcycle": 0.0,
+            "Singing": 0.5333333333333333,
+            "Speech": 0.7492877492877493,
+            "Telephone_bell_ringing": 0.0,
+            "Vacuum_cleaner": 0.0,
+            "Violin_fiddle": 0.8472222222222222
+          }
+        },
+        "segment": {
+          "precision": 0.6550775387693847,
+          "recall": 0.28666812609457093,
+          "micro_f1": 0.39881224303334856,
+          "macro_f1": 0.19466469755931315,
+          "per_class_f1": {
+            "Accordion": 0.1696969696969697,
+            "Acoustic_guitar": 0.07233273056057866,
+            "Baby_cry_infant_cry": 0.0,
+            "Baby_laughter": 0.0,
+            "Banjo": 0.0,
+            "Basketball_bounce": 0.09876543209876543,
+            "Blender": 0.0,
+            "Car": 0.0,
+            "Cat": 0.0,
+            "Cello": 0.592741935483871,
+            "Chainsaw": 0.0,
+            "Cheering": 0.5116279069767442,
+            "Chicken_rooster": 0.0,
+            "Clapping": 0.0,
+            "Dog": 0.5973715651135006,
+            "Fire_alarm": 0.0,
+            "Frying_(food)": 0.5655737704918032,
+            "Helicopter": 0.7192307692307692,
+            "Lawn_mower": 0.0,
+            "Motorcycle": 0.0,
+            "Singing": 0.2631578947368421,
+            "Speech": 0.5444517979263181,
+            "Telephone_bell_ringing": 0.0,
+            "Vacuum_cleaner": 0.0,
+            "Violin_fiddle": 0.7316666666666667
+          }
+        },
+        "event": {
+          "precision": 0.34993924665856624,
+          "recall": 0.20267417311752287,
+          "micro_f1": 0.25668449197860965,
+          "macro_f1": 0.12130036069082385,
+          "per_class_f1": {
+            "Accordion": 0.0,
+            "Acoustic_guitar": 0.030303030303030304,
+            "Baby_cry_infant_cry": 0.0,
+            "Baby_laughter": 0.0,
+            "Banjo": 0.0,
+            "Basketball_bounce": 0.1016949152542373,
+            "Blender": 0.0,
+            "Car": 0.0,
+            "Cat": 0.0,
+            "Cello": 0.3582089552238806,
+            "Chainsaw": 0.0,
+            "Cheering": 0.2857142857142857,
+            "Chicken_rooster": 0.0,
+            "Clapping": 0.0,
+            "Dog": 0.42201834862385323,
+            "Fire_alarm": 0.0,
+            "Frying_(food)": 0.36363636363636365,
+            "Helicopter": 0.4594594594594595,
+            "Lawn_mower": 0.0,
+            "Motorcycle": 0.0,
+            "Singing": 0.16149068322981366,
+            "Speech": 0.3166496424923391,
+            "Telephone_bell_ringing": 0.0,
+            "Vacuum_cleaner": 0.0,
+            "Violin_fiddle": 0.5333333333333333
+          }
+        }
+      },
+      "44": {
+        "clip": {
+          "precision": 0.8076923076923077,
+          "recall": 0.39487179487179486,
+          "micro_f1": 0.5304247990815155,
+          "macro_f1": 0.20274233644649178,
+          "per_class_f1": {
+            "Accordion": 0.0,
+            "Acoustic_guitar": 0.21052631578947367,
+            "Baby_cry_infant_cry": 0.0,
+            "Baby_laughter": 0.0,
+            "Banjo": 0.0,
+            "Basketball_bounce": 0.6415094339622641,
+            "Blender": 0.0,
+            "Car": 0.0,
+            "Cat": 0.0,
+            "Cello": 0.7037037037037037,
+            "Chainsaw": 0.0,
+            "Cheering": 0.5753424657534246,
+            "Chicken_rooster": 0.0,
+            "Clapping": 0.0,
+            "Dog": 0.7663551401869159,
+            "Fire_alarm": 0.0,
+            "Frying_(food)": 0.0,
+            "Helicopter": 0.0,
+            "Lawn_mower": 0.0,
+            "Motorcycle": 0.0,
+            "Singing": 0.5806451612903226,
+            "Speech": 0.7371428571428571,
+            "Telephone_bell_ringing": 0.0,
+            "Vacuum_cleaner": 0.0,
+            "Violin_fiddle": 0.8533333333333334
+          }
+        },
+        "segment": {
+          "precision": 0.6293902781680247,
+          "recall": 0.24518388791593695,
+          "micro_f1": 0.35289484048838127,
+          "macro_f1": 0.14223179731643248,
+          "per_class_f1": {
+            "Accordion": 0.0,
+            "Acoustic_guitar": 0.05474452554744526,
+            "Baby_cry_infant_cry": 0.0,
+            "Baby_laughter": 0.0,
+            "Banjo": 0.0,
+            "Basketball_bounce": 0.47346938775510206,
+            "Blender": 0.0,
+            "Car": 0.0,
+            "Cat": 0.0,
+            "Cello": 0.4576659038901602,
+            "Chainsaw": 0.0,
+            "Cheering": 0.3465346534653465,
+            "Chicken_rooster": 0.0,
+            "Clapping": 0.0,
+            "Dog": 0.5727699530516432,
+            "Fire_alarm": 0.0,
+            "Frying_(food)": 0.0,
+            "Helicopter": 0.0,
+            "Lawn_mower": 0.0,
+            "Motorcycle": 0.0,
+            "Singing": 0.3890784982935154,
+            "Speech": 0.5181109582760202,
+            "Telephone_bell_ringing": 0.0,
+            "Vacuum_cleaner": 0.0,
+            "Violin_fiddle": 0.743421052631579
+          }
+        },
+        "event": {
+          "precision": 0.3018181818181818,
+          "recall": 0.175228712174525,
+          "micro_f1": 0.22172751558325912,
+          "macro_f1": 0.07104221063842851,
+          "per_class_f1": {
+            "Accordion": 0.0,
+            "Acoustic_guitar": 0.0,
+            "Baby_cry_infant_cry": 0.0,
+            "Baby_laughter": 0.0,
+            "Banjo": 0.0,
+            "Basketball_bounce": 0.16,
+            "Blender": 0.0,
+            "Car": 0.0,
+            "Cat": 0.0,
+            "Cello": 0.19444444444444445,
+            "Chainsaw": 0.0,
+            "Cheering": 0.10309278350515463,
+            "Chicken_rooster": 0.0,
+            "Clapping": 0.0,
+            "Dog": 0.2937062937062937,
+            "Fire_alarm": 0.0,
+            "Frying_(food)": 0.0,
+            "Helicopter": 0.0,
+            "Lawn_mower": 0.0,
+            "Motorcycle": 0.0,
+            "Singing": 0.22093023255813954,
+            "Speech": 0.2982635342185904,
+            "Telephone_bell_ringing": 0.0,
+            "Vacuum_cleaner": 0.0,
+            "Violin_fiddle": 0.5056179775280899
+          }
+        }
+      }
+    }
+  },
+  "summary": {
+    "baseline": {
+      "clip": {
+        "precision": {
+          "mean": 0.9231942034573613,
+          "std": 0.019947240430205883
+        },
+        "recall": {
+          "mean": 0.568945868945869,
+          "std": 0.03733715789766715
+        },
+        "micro_f1": {
+          "mean": 0.7033099224924838,
+          "std": 0.02532254826883168
+        },
+        "macro_f1": {
+          "mean": 0.647907428344569,
+          "std": 0.014476811713030604
+        }
+      },
+      "segment": {
+        "precision": {
+          "mean": 0.8270307952643371,
+          "std": 0.03293252206763629
+        },
+        "recall": {
+          "mean": 0.36897985989492116,
+          "std": 0.029214793193694178
+        },
+        "micro_f1": {
+          "mean": 0.5096703640323811,
+          "std": 0.027439978639066703
+        },
+        "macro_f1": {
+          "mean": 0.4727455064885517,
+          "std": 0.0201253268470488
+        }
+      },
+      "event": {
+        "precision": {
+          "mean": 0.3491526030356258,
+          "std": 0.007838752750964012
+        },
+        "recall": {
+          "mean": 0.2688247712878255,
+          "std": 0.030867997465814645
+        },
+        "micro_f1": {
+          "mean": 0.3032002644948996,
+          "std": 0.021005256781744936
+        },
+        "macro_f1": {
+          "mean": 0.30255364925797196,
+          "std": 0.011636421598470151
+        }
+      }
+    },
+    "bigru": {
+      "clip": {
+        "precision": {
+          "mean": 0.8618751906849478,
+          "std": 0.01500866453303449
+        },
+        "recall": {
+          "mean": 0.6911680911680912,
+          "std": 0.01604320025675338
+        },
+        "micro_f1": {
+          "mean": 0.7669468382173342,
+          "std": 0.005626312713094659
+        },
+        "macro_f1": {
+          "mean": 0.6959151731044529,
+          "std": 0.008325607606814955
+        }
+      },
+      "segment": {
+        "precision": {
+          "mean": 0.7465485175582965,
+          "std": 0.01241589471863615
+        },
+        "recall": {
+          "mean": 0.5808523058960887,
+          "std": 0.022768478559296756
+        },
+        "micro_f1": {
+          "mean": 0.6531456778792021,
+          "std": 0.014382335541864126
+        },
+        "macro_f1": {
+          "mean": 0.6083070458789833,
+          "std": 0.016580570544543944
+        }
+      },
+      "event": {
+        "precision": {
+          "mean": 0.5007442390849138,
+          "std": 0.020521710471757312
+        },
+        "recall": {
+          "mean": 0.3992493549143796,
+          "std": 0.015098789623977574
+        },
+        "micro_f1": {
+          "mean": 0.44416169271284806,
+          "std": 0.015129366462781981
+        },
+        "macro_f1": {
+          "mean": 0.4586949353228425,
+          "std": 0.021418980439498105
+        }
+      }
+    },
+    "transformer": {
+      "clip": {
+        "precision": {
+          "mean": 0.8804854225414503,
+          "std": 0.01810626690431716
+        },
+        "recall": {
+          "mean": 0.6752136752136751,
+          "std": 0.04952104593802042
+        },
+        "micro_f1": {
+          "mean": 0.7632197195432165,
+          "std": 0.025935028075183445
+        },
+        "macro_f1": {
+          "mean": 0.7261621845121485,
+          "std": 0.029004759700672785
+        }
+      },
+      "segment": {
+        "precision": {
+          "mean": 0.796726263123063,
+          "std": 0.018179639855936052
+        },
+        "recall": {
+          "mean": 0.5511529480443665,
+          "std": 0.05840049654028473
+        },
+        "micro_f1": {
+          "mean": 0.6502094171151054,
+          "std": 0.0409131833983732
+        },
+        "macro_f1": {
+          "mean": 0.6229942123826747,
+          "std": 0.047258793814437414
+        }
+      },
+      "event": {
+        "precision": {
+          "mean": 0.4341324166271477,
+          "std": 0.022276314189657254
+        },
+        "recall": {
+          "mean": 0.3908045977011494,
+          "std": 0.052399915720916596
+        },
+        "micro_f1": {
+          "mean": 0.41080402563298296,
+          "std": 0.0390948795470426
+        },
+        "macro_f1": {
+          "mean": 0.4397035233715796,
+          "std": 0.04412535788727057
+        }
+      }
+    },
+    "cross_modal": {
+      "clip": {
+        "precision": {
+          "mean": 0.8142375939151275,
+          "std": 0.006300768611595711
+        },
+        "recall": {
+          "mean": 0.42877492877492873,
+          "std": 0.033761585331825716
+        },
+        "micro_f1": {
+          "mean": 0.5612679934835062,
+          "std": 0.029829082068246946
+        },
+        "macro_f1": {
+          "mean": 0.25517232630470077,
+          "std": 0.04547733194690466
+        }
+      },
+      "segment": {
+        "precision": {
+          "mean": 0.6560158743862418,
+          "std": 0.027106947319036085
+        },
+        "recall": {
+          "mean": 0.2751021599532983,
+          "std": 0.026131223719778576
+        },
+        "micro_f1": {
+          "mean": 0.3874455275597781,
+          "std": 0.030499579807036013
+        },
+        "macro_f1": {
+          "mean": 0.17647682413633659,
+          "std": 0.029676192282355157
+        }
+      },
+      "event": {
+        "precision": {
+          "mean": 0.32984658977972364,
+          "std": 0.025022816174004932
+        },
+        "recall": {
+          "mean": 0.20314332629603563,
+          "std": 0.028152122765429537
+        },
+        "micro_f1": {
+          "mean": 0.25105034907594653,
+          "std": 0.02695112420806787
+        },
+        "macro_f1": {
+          "mean": 0.10377854078842169,
+          "std": 0.028373956425352634
+        }
+      }
+    }
+  }
+}

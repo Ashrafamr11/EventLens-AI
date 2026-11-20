@@ -1,0 +1,39 @@
+{
+  "experiment": "learning_rate_study",
+  "model": "BiGRU",
+  "seed": 42,
+  "learning_rate": 0.0003,
+  "reference_learning_rate": 0.001,
+  "epochs": 5,
+  "batch_size": 64,
+  "weight_decay": 0.0001,
+  "best_val_loss": 0.08926892573320994,
+  "training_seconds": 158.79434049200063,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.2331811359643936,
+      "val_loss": 0.2087894442314727
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.15750961680412293,
+      "val_loss": 0.1365297220773616
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.10679500497579575,
+      "val_loss": 0.10674448832525127
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.08566784070730209,
+      "val_loss": 0.09527709255876085
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.07395275807380676,
+      "val_loss": 0.08926892573320994
+    }
+  ]
+}
