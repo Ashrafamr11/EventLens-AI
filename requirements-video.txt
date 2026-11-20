@@ -1,0 +1,6 @@
+# Additional dependencies for extracting VGGish audio from raw videos.
+# FFmpeg/FFprobe are system executables; install them separately.
+-r requirements.txt
+tensorflow>=2.16
+resampy>=0.4.3
+tf_slim>=1.1.0
