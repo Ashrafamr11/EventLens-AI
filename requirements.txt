@@ -1,0 +1,9 @@
+# Core application, model inference and numeric feature files
+numpy>=1.26
+scipy>=1.11
+torch>=2.2
+torchvision>=0.17
+Pillow>=10
+fastapi>=0.110
+uvicorn>=0.29
+python-multipart>=0.0.9
