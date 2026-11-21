@@ -13,7 +13,7 @@ Pharos University in Alexandria, Faculty of Computer Science & Artificial Intell
 | Kareem Abdelnaser Mohamed Alazazy | 202303078 |
 | Mohamed Ehab Abdelnaby Elsayed Fouda | 202303042 |
 | Youssef Ali Abdallah Shalaby Elfar | 202302115 |
-| Osama Khalid Goda Fadil Aboelhassan | 202303877 |
+| mahmoud Gomaa Elsayed Eid Mohamed | 202303293 |
 
 > **Team approval:** All six students appear as accepted Team W entries in the course team sheet. The team confirms that the TA approved its six-person roster.
 
